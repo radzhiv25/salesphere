@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom'
-import HeroImg from '../images/img-1.avif'
+// import HeroImg from './images/img-1.avif'
 import { Testimonials } from './testimonials'
 
 export const Hero = () => {
@@ -9,7 +9,7 @@ export const Hero = () => {
       <div className="hero md:p-10 flex md:flex-row flex-col md:my-0 my-8">
       <div className="left-cont p-5 md:w-1/2 w-auto bg-blue-200 md:rounded-l-md xs:rounded-t-md">
         <h1 className='text-3xl font-semibold'>Welcome to Salesphere</h1>
-        <img src={HeroImg} alt="" className='mt-5 shadow-lg rounded-md'/>
+        <img src="/images/img-1.avif" alt="" className='mt-5 shadow-lg rounded-md'/>
       </div>
       <div className="right-cont p-5 bg-blue-300 md:w-1/2 w-auto font-medium lg:py-24 md:rounded-r-md rounded-b">
         <p className='md:text-xl'>
