@@ -1,21 +1,20 @@
-// import logo from './logo.svg';
-// import './App.css';
-
-import { Navbar } from "./components/Navbar";
-import { Hero } from "./components/Hero";
 import { Routes, Route } from "react-router-dom";
-// import { Products } from "./components/Product";
-import { Cart } from "./components/Cart";
+import { Navbar } from "./components/navbar";
+import { Home } from "./pages/Home";
+import { Product } from "./pages/Product";
+import { Cart } from "./pages/Cart";
+import { Footer } from "./components/footer";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
       <Routes>
-        {/* <Route path="/product" element={<Products />} /> */}
+        <Route path="/" element={<Home />} />
+        <Route path="/product" element={<Product />} />
         <Route path="/cart" element={<Cart />} />
       </Routes>
-      <Hero />
+      <Footer />
     </div>
   );
 }
