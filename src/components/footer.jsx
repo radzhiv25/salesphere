@@ -2,8 +2,8 @@ import React from 'react'
 
 export const Footer = () => {
   return (
-    <div className='flex flex-col  mt-auto p-5 text-center'>
-        <p className=''>Salesphere</p>
+    <div className='mt-10 flex flex-col text-center'>
+        <p className='font-bold text-2xl'>Salesphere©2023</p>
     </div>
   )
 }
