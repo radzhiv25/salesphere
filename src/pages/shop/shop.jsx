@@ -1,6 +1,7 @@
 import React from 'react'
 import { PRODUCTS } from '../../product'
 import { Product } from './product'
+import { Footer } from '../../components/footer'
 
 export const Shop = () => {
   return (
@@ -10,12 +11,13 @@ export const Shop = () => {
             Salesphere Product
             </h1>
         </div>
-        <div className="products grid grid-cols-4 gap-10">
+        <div className="products grid md:grid-cols-4 grid-cols-1 gap-10">
             {
                 PRODUCTS.map((product) => 
                 <Product data={product}/>)
             }
         </div>
+        <Footer />
     </div>
   )
 }
