@@ -11,7 +11,7 @@ export const Cart = () => {
   return (
     <div className='p-10'>
         <div>
-            <h1>Cart Items</h1>
+            <h1 className='text-5xl font-bold mb-20'>Cart Items</h1>
         </div>
         <div className="cartProduct">
             {PRODUCTS.map((product) => {
@@ -26,7 +26,7 @@ export const Cart = () => {
             <button className='p-2 border' onClick={() => navigate(-1)}>
                 Continue Shopping
             </button>
-            <button className='ml-5 p-2 border' onClick={() => }>
+            <button className='ml-5 p-2 border' onClick={() => alert("Are you confirm to Checkout")}>
                 Checkout
             </button>
             </div>
